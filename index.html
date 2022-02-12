@@ -1,6 +1,89 @@
 <html>
-    <head>Projeto B</head>
-    <body>
-        <p>Hello World!s</p>
-    </body>
+
+<head>
+    <title>Projeto B</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
+</head>
+
+<body>
+    <div class="project_b_content">
+        <nav>
+            <div class="project_b_nav_left_menu">
+                <a class="project_b_logo" href="#">
+                    <p>Controle financeiro</p>
+                </a>
+            </div>
+            <div class="project_b_nav_right_menu">
+                <ul>
+                    <li><a href="#">Cadastro de Transações</a></li>
+                    <li><a href="#">Limpar Dados</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="project_b_container">
+            <div class="project_b_form_wrapper">
+                <form>
+                    <label class="project_b_form_title">Nova Transação</label>
+                    <div class="project_b_form_fields">
+                        <div class="form_item">
+                            <label>Tipo de transação</label>
+                            <input type="text" placeholder="Compra" />
+                        </div>
+                        <div class="form_item">
+                            <label>Nome da mercadoria</label>
+                            <input type="text" placeholder="Input" />
+                        </div>
+                        <div class="form_item">
+                            <label>Valor</label>
+                            <input type="text" placeholder="R$ 0,00" />
+                        </div>
+                    </div>
+                    <button type="submit">Adicionar Transação</button>
+                </form>
+            </div>
+            <div class="project_b_table_wrapper">
+                <table cellspacing="0">
+                    <caption>Extrato de transações</caption>
+                    <tr>
+                        <th class="project_b_table_operator"></th>
+                        <th class="project_b_table_product_name">Mercadoria</th>
+                        <th class="project_b_table_value">Valor</th>
+                    </tr>
+                    <tr>
+                        <td class="project_b_table_operator">+</td>
+                        <td class="project_b_table_product_name">Lorem ipsum dolor sit amet consectetur</td>
+                        <td class="project_b_table_value">R$ 12.999,99</td>
+                    </tr>
+                    <tr>
+                        <td class="project_b_table_operator">-</td>
+                        <td class="project_b_table_product_name">Quis nostrud exercitation</td>
+                        <td class="project_b_table_value">R$ 99,99</td>
+                    </tr>
+                    <tr>
+                        <td class="project_b_table_operator">+</td>
+                        <td class="project_b_table_product_name">Lorem ipsum</td>
+                        <td class="project_b_table_value">R$ 9,99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="project_b_table_total_value">
+                        <td class="project_b_table_operator"></td>
+                        <td class="project_b_table_product_name">Total</td>
+                        <td class="project_b_table_value">
+                            R$ 12.909,99
+                            <br />
+                            <span>[Lucro]</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

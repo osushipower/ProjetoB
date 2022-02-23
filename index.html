@@ -11,7 +11,7 @@
         <nav>
             <!-- Logo -->
             <div class="project_b_nav_left_menu">
-                
+
             </div>
             <!-- Texto -->
             <div class="project_b_nav_text">
@@ -19,7 +19,7 @@
             </div>
             <!-- Menu Hamburguer-->
             <div class="project_b_nav_hamburguer">
-                
+
             </div>
             <!-- Menu Desktop-->
             <div class="project_b_nav_right_menu">
@@ -32,20 +32,24 @@
         </nav>
         <div class="project_b_container">
             <div class="project_b_form_wrapper">
-                <form>
+                <form onsubmit="test()">
                     <label class="project_b_form_title">Nova Transação</label>
                     <div class="project_b_form_fields">
                         <div class="form_item">
                             <label>Tipo de transação</label>
-                            <input type="text" placeholder="Compra" />
+                            <!-- <input id="compra" type="text" required placeholder="Compra" /> -->
+                            <select>
+                                <option value="Compra">Compra</option>
+                                <option value="Venda">Venda</option>
+                            </select>
                         </div>
                         <div class="form_item">
                             <label>Nome da mercadoria</label>
-                            <input type="text" placeholder="Input" />
+                            <input id="mercadoria" type="text" required placeholder="Input" />
                         </div>
                         <div class="form_item">
                             <label>Valor</label>
-                            <input type="text" placeholder="R$ 0,00" />
+                            <input id="valor" type="number" required placeholder="R$ 0,00" />
                         </div>
                     </div>
                     <button type="submit">Adicionar Transação</button>
@@ -54,44 +58,50 @@
             <div class="project_b_table_wrapper">
                 <table cellspacing="0">
                     <caption>Extrato de transações</caption>
-                    <tr>
-                        <th class="project_b_table_operator"></th>
-                        <th class="project_b_table_product_name">Mercadoria</th>
-                        <th class="project_b_table_value">Valor</th>
-                    </tr>
-                    <tr>
-                        <td class="project_b_table_operator">+</td>
-                        <td class="project_b_table_product_name">Lorem ipsum dolor sit amet consectetur</td>
-                        <td class="project_b_table_value">R$ 12.999,99</td>
-                    </tr>
-                    <tr>
-                        <td class="project_b_table_operator">-</td>
-                        <td class="project_b_table_product_name">Quis nostrud exercitation</td>
-                        <td class="project_b_table_value">R$ 99,99</td>
-                    </tr>
-                    <tr>
-                        <td class="project_b_table_operator">+</td>
-                        <td class="project_b_table_product_name">Lorem ipsum</td>
-                        <td class="project_b_table_value">R$ 9,99</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="project_b_table_total_value">
-                        <td class="project_b_table_operator"></td>
-                        <td class="project_b_table_product_name">Total</td>
-                        <td class="project_b_table_value">
-                            R$ 12.909,99
-                            <br />
-                            <span>[Lucro]</span>
-                        </td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th class="project_b_table_operator"></th>
+                            <th class="project_b_table_product_name">Mercadoria</th>
+                            <th class="project_b_table_value">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="project_b_table_operator">+</td>
+                            <td class="project_b_table_product_name">Lorem ipsum dolor sit amet consectetur</td>
+                            <td class="project_b_table_value">R$ 12.999,99</td>
+                        </tr>
+                        <tr>
+                            <td class="project_b_table_operator">-</td>
+                            <td class="project_b_table_product_name">Quis nostrud exercitation</td>
+                            <td class="project_b_table_value">R$ 99,99</td>
+                        </tr>
+                        <tr>
+                            <td class="project_b_table_operator">+</td>
+                            <td class="project_b_table_product_name">Lorem ipsum</td>
+                            <td class="project_b_table_value">R$ 9,99</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="project_b_table_total_value">
+                            <td class="project_b_table_operator"></td>
+                            <td class="project_b_table_product_name">Total</td>
+                            <td class="project_b_table_value">
+                                R$ 12.909,99
+                                <br />
+                                <span>[Lucro]</span>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
 </body>
+<script type='text/javascript' src="js/script.js"></script>
+<script type='text/javascript' src="js/loader.js"></script>
 
 </html>

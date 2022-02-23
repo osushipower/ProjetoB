@@ -172,6 +172,11 @@ body .project_b_content .project_b_container .project_b_form_wrapper form .proje
   padding: 6px;
   width: 100%;
 }
+body .project_b_content .project_b_container .project_b_form_wrapper form .project_b_form_fields .form_item select {
+  height: 30px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
 @media all and (max-width: 768px) {
   body .project_b_content .project_b_container .project_b_form_wrapper form .project_b_form_fields {
     flex-direction: row;

@@ -210,6 +210,12 @@ body{
                                 padding: 6px;
                                 width: 100%;
                             }
+
+                            select {
+                                height: 30px;
+                                border: 1px solid $border-color;
+                                border-radius: 4px;
+                            }
                         }
 
                         @include tablet {
